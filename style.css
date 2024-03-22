@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(160, 160, 175);
+    background-size: cover; /* caso use imagem de fundo mantem esse  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+
+
+}
+
+.container{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    margin: 45px 0;
+    display: flex;
+    gap: 40px;
+    
+}
+
+button{
+
+    padding: 10px;
+    font-size: 150px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+
+}
+
+button:hover{
+
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#rock {
+background-color: #a200ff;
+
+}
+
+#paper{
+
+    background-color: #7dbeed;
+}
+
+#scissors{
+    background-color: #9ee01a;
+}
+
+P{
+
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.your-score span{
+    color: #a200ff;
+
+}
+
+
+.machine-score span{ 
+
+    color: rgba(3, 12, 68, 0.828);
+}
