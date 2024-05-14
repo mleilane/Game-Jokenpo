@@ -1,82 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: rgb(160, 160, 175);
-    background-size: cover; /* caso use imagem de fundo mantem esse  */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 30px;
-
-
+body {
+  background-image: url("./img/background.jpg");
+  background-size: cover; /* caso use imagem de fundo mantem esse  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
 }
 
-.container{
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: aliceblue;
 }
 
-.buttons{
-    margin: 45px 0;
-    display: flex;
-    gap: 40px;
-    
+.container {
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid rgba(208, 117, 201, 0.2);
+  backdrop-filter: blur(150px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 70vh;
 }
 
-button{
-
-    padding: 10px;
-    font-size: 150px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-
+.buttons {
+  margin: 45px 0;
+  display: flex;
+  gap: 40px;
+  padding: 10px;
 }
 
-button:hover{
+button {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  font-size: 100px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
 
-    opacity: 0.7;
-    transition: opacity 0.5s ease-in-out;
+button:hover {
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.choices div {
+  width: 49%;
+  margin-left: 10%;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.result div {
+  width: 49%;
+  margin-left: 10%;
+}
+
+.machine-score {
+  display: inline-block;
+}
+
+.machine-score span {
+  margin-left: 10px;
 }
 
 #rock {
-background-color: #a200ff;
-
+  background-color: #a200ff;
 }
 
-#paper{
-
-    background-color: #7dbeed;
+#paper {
+  background-color: #7dbeed;
 }
 
-#scissors{
-    background-color: #9ee01a;
+#scissors {
+  background-color: #9ee01a;
 }
 
-P{
-
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 20px;
+P {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: aliceblue;
 }
 
-.your-score span{
-    color: #a200ff;
-
+.your-score span {
+  color: #d67de8;
 }
 
-
-.machine-score span{ 
-
-    color: rgba(3, 12, 68, 0.828);
+.machine-score span {
+  color: #d67de8;
 }

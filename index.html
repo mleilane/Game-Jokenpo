@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>JokenPô</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <main class="container">
+      <h1>Joken Pô</h1>
 
-    <div class="container">
-        <h1> Joken Pô</h1>
+     
 
-        <div class="buttons">
-            <!-- criando os botões já com os emojis (codigos)-->
-            <button id="rock">&#x1f44A;</button>
-            <button id="paper">&#x1f590;</button>
-            <button id="scissors">&#x270c;</button>
+      <section class="buttons">
+        <!-- criando os botões já com os emojis (codigos)-->
+        <button id="rock">&#x1f44A;</button>
+        <button id="paper">&#x1f590;</button>
+        <button id="scissors">&#x270c;</button>
+      </section>
 
+      <section class="choices">
+        <div>
+          <p>Sua Escolha: <span id="player-choice"></span></p>
         </div>
 
-        <p class="Result"> </p>
+        <div>
+          <p>Escolha da Máquina: <span id="machine-choice"></span></p>
+        </div>
+      </section>
 
-        <p class="your-score"> Sua pontuação: <span> 0 </span></p>
-        <p class="machine-score"> Adversário: <span> 0 </span></p>
+      <section class="result">
+        <!--  <p class="Result"></p>-->
+        <div>
+          <p class="your-score">Seu placar: <span> 0 </span></p>
+        </div>
 
-
-    </div>
-
-
-
-
-</body>
-
+        <div>
+          <p class="machine-score">Placar da Máquina: <span> 0 </span></p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
