@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="./scripts.js"></script>
     <title>JokenPô</title>
   </head>
 
@@ -14,37 +13,36 @@
 
       <section class="buttons">
         <!-- criando os botões já com os emojis (codigos)-->
-        <button id="rock" onclick="playHuman('rock')">&#x1f44A;</button>
-        <button id="paper" onclick="playHuman('paper')">&#x1f590;</button>
-        <button id="scissors" onclick="playHuman('scissors')">&#x270c;</button>
+        <button id="PEDRA" onclick="playHuman('PEDRA')">&#x1f44A;</button>
+        <button id="PAPEL" onclick="playHuman('PAPEL')">&#x1f590;</button>
+        <button id="TESOURA" onclick="playHuman('TESOURA')">&#x270c;</button>
         <!-- adicionamos evento de click nos botoes "onclick" e passando qual foi a escolha (pedra, papel ou tesoura)-->
       </section>
 
-      
+      <p class="resultgame"></p>
 
       <section class="choices">
         <div>
-          <p>Sua Escolha: <span id="player-choice"></span></p>
+          <p>Player: <span id="player-choice"></span></p>
         </div>
 
         <div>
-          <p>Escolha da Máquina: <span id="machine-choice"></span></p>
+          <p>Computador: <span id="machine-choice"></span></p>
         </div>
       </section>
 
-      <section class="result">
-        
-        <p class="draw"></p> <!-- reservado para colocarmos o texto "Deu empate"-->
-      
+      <!-- reservado para colocarmos o texto do reaultado (empate, perdeu ou ganhou)-->
 
+      <section class="result">
         <div>
-          <p class="your-score">Seu placar: <span> 0 </span></p>
+          <p class="your-score">Placar: <span> 0 </span></p>
         </div>
 
         <div>
-          <p class="machine-score">Placar da Máquina: <span> 0 </span></p>
+          <p class="machine-score">Placar: <span> 0 </span></p>
         </div>
       </section>
     </main>
+    <script src="./scripts.js"></script>
   </body>
 </html>

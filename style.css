@@ -16,9 +16,9 @@ body {
 
 h1 {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   font-size: 30px;
-  color: aliceblue;
+  color: #b2cae1;
 }
 
 .container {
@@ -32,21 +32,21 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 70vh;
+  height: 80vh;
 }
 
 .buttons {
-  margin: 45px 0;
+  margin: 15px 0;
   display: flex;
   gap: 40px;
   padding: 10px;
 }
 
 button {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 99px;
   padding: 10px;
-  font-size: 100px;
+  font-size: 50px;
   cursor: pointer;
   border: none;
   border-radius: 10px;
@@ -65,7 +65,8 @@ button:hover {
 
 .choices div {
   width: 49%;
-  margin-left: 10%;
+  margin: 8px;
+  margin-left: 11%;
 }
 
 .result {
@@ -76,7 +77,16 @@ button:hover {
 
 .result div {
   width: 49%;
-  margin-left: 10%;
+  margin-left: 11%;
+}
+
+.resultgame {
+  font-size: 21px;
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  margin: 12px;
 }
 
 .machine-score {
@@ -87,28 +97,27 @@ button:hover {
   margin-left: 10px;
 }
 
-#rock {
+#PEDRA {
   background-color: #a200ff;
 }
 
-#paper {
+#PAPEL {
   background-color: #7dbeed;
 }
 
-#scissors {
+#TESOURA {
   background-color: #9ee01a;
 }
 
 P {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #b2cae1;
+}
+
+span {
   color: aliceblue;
-}
-
-.your-score span {
-  color: #d67de8;
-}
-
-.machine-score span {
-  color: #d67de8;
+  font-weight: bold;
+  font-size: 17px;
 }
