@@ -1,44 +1,44 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* remove a margem padrao  */
+  padding: 0; /* remove padding padrao */
+  box-sizing: border-box; /* define box-sizing para border-box para todos os elementos*/ 
 }
 
 body {
-  background-image: url("./img/background.jpg");
-  background-size: cover; /* caso use imagem de fundo mantem esse  */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 30px;
+  background-image: url("./img/background.jpg"); /* imagem de fundo */
+  background-size: cover; /* Ajusta a imagem de fundo para cobrir toda a tela */
+  display: flex; 
+  justify-content: center; /* centraliza horizontal */
+  align-items: center; /*centraliza na vertical  */
+  min-height: 100vh;  /* Define a altura mínima como 100% da altura da tela */
+  padding: 30px; 
 }
 
 h1 {
-  font-weight: bold;
-  margin-bottom: 25px;
-  font-size: 30px;
-  color: #b2cae1;
+  font-weight: bold; /* fonte negrito */
+  margin-bottom: 25px; /* margem inferior */
+  font-size: 30px; /* tamanho da fonte  */
+  color: #b2cae1; /* cor da fonte */
 }
 
 .container {
   padding: 20px;
-  background-color: transparent;
-  border: 2px solid rgba(208, 117, 201, 0.2);
-  backdrop-filter: blur(20px);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 80vh;
+  background-color: transparent; /* fundo transparente  */
+  border: 2px solid rgba(208, 117, 201, 0.2); /* bordas */
+  backdrop-filter: blur(20px); /*adiciona efeito de desfoque no fundo  */
+  border-radius: 10px; /* cantos arredondados */
+  display: flex; 
+  flex-direction: column; /*alinha os itens em coluna */
+  align-items: center; /* centraliza vertical*/
+  justify-content: center; /* centraliza horizontal */
+  width: 50%; /* largura */
+  height: 80vh; /* altura */
 }
 
 .buttons {
   margin: 15px 0;
   display: flex;
-  gap: 40px;
+  gap: 40px; /* aplica um espaço entre os botoes */
   padding: 10px;
 }
 
@@ -48,13 +48,13 @@ button {
   padding: 10px;
   font-size: 50px;
   cursor: pointer;
-  border: none;
+  border: none; /* remove as bordas */
   border-radius: 10px;
 }
 
 button:hover {
-  opacity: 0.7;
-  transition: opacity 0.5s ease-in-out;
+  opacity: 0.7; /* aplica a opacidade ao passar o mouse */
+  transition: opacity 0.5s ease-in-out; /* Adiciona uma transição suave */
 }
 
 .choices {
@@ -120,4 +120,64 @@ span {
   color: aliceblue;
   font-weight: bold;
   font-size: 17px;
+}
+
+/* INICIANDO A RESPONSIVIDADE */
+
+@media (max-width: 980px) {
+  .container {
+    width: 99%; /* Ajusta a largura do container em telas menores */
+    padding: 10px;
+  }
+
+  .buttons {
+    gap: 16px;
+  }
+
+  button {
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  .resultgame {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .buttons {
+    gap: 16px;
+  }
+
+  button {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+  .resultgame{
+    font-size: 14px;
+  }
 }
