@@ -2,7 +2,7 @@
 <br> 
 <div align="center"> 
 <p align="center"> Disponivel no link: <a href="https://mleilane.github.io/JOKENPO/"> JokenPô </a>  </p>
-<img  align="center" alt="Mockup#" height="530" width="540" src="https://github.com/mleilane/JOKENPO/blob/main/img/Mockup.png?raw=true">
+<img  align="center" alt="Mockup#" height="50%" width="50%" src="https://github.com/mleilane/JOKENPO/blob/main/img/Mockup.png?raw=true">
 <p align="center"> Desenvolvido durante o curso de Desenvolvedor FullStack  <a href="https://rodolfomori.com.br/devclub"> Dev Club </a></p>
   </div>
 <br>
