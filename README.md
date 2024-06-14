@@ -30,5 +30,39 @@
 </div>
 <br>
 
+## Estrutura de Arquivos: 📁
+
+```sh
+├── img/
+│   └── Mockup.png
+├── scripts/
+│   └── scripts.js
+├── styles/
+│   └── style.css
+├── index.html
+└── README.md
+```
+
+## Como Executar o Projeto: 🚀
+
+Clone o repositório 
+```sh
+git clone https://github.com/mleilane/JOKENPO.git
+```
+
+Navegue até o diretório do projeto
+```sh
+cd JOKENPO
+```
+
+Abra o arquivo no seu navegador preferido.
+```sh
+index.html
+```
+
+### Sinta-se à vontade para contribuir com o projeto! 🤝
+
+
+
 
   
